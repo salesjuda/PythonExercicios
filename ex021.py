@@ -16,8 +16,9 @@ pygame.mixer.music.set_volume(0.8)
 pygame.mixer.music.play()
 
 # Loop para ficar rodando um menu de opções
+print("Digite 1 para pausar, 2 para continuar, 3 para reiniciar e 0 para parar: ")
 while True:
-    opcao = int(input("Digite 1 para pausar, 2 para continuar, 3 para reiniciar e 0 para parar: "))
+    opcao = int(input())
     if opcao == 1:
         pygame.mixer.music.pause()
         print("Você Pausou a musica!")
@@ -25,8 +26,10 @@ while True:
     elif opcao == 2:
         pygame.mixer.music.unpause()
         print("Musica Retomada!")
+
     elif opcao == 3:
         pygame.mixer.music.play()
+        print("Você Reiniciou a musica!")
        
     elif opcao == 0:
        pygame.mixer.music.stop()
