@@ -2,4 +2,4 @@
 import math
 
 num = float(input("Digite um numero: "))
-print(f"O Numero {num} tem a porção inteira {math.floor(num)}.")
+print(f"O Numero {num} tem a porção inteira {math.trunc(num)}.")
