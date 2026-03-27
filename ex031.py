@@ -2,7 +2,7 @@
 km = float(input("Digite a distancia da viagem em Km: "))
 if(km <= 200):
     total = km * 0.5
-    print(f"o Preço da passagem é de R${total} Reais de acordo com a distância")
+    print(f"o Preço da passagem é de R${total:.2f} Reais de acordo com a distância")
 else:
     total = km * 0.45
-    print(f"O preço da passagem é de R${total} Reais de acordo com a distância.")
+    print(f"O preço da passagem é de R${total:.2f} Reais de acordo com a distância.")
